@@ -1,0 +1,282 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+  android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:isScrollContainer="true"
+    android:overScrollMode="ifContentScrolls"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    android:focusable="true" 
+    android:focusableInTouchMode="true"
+    
+    tools:context=".MainActivity" >
+
+        <TextView
+            android:id="@+id/tvEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="#006633"
+            android:gravity="center"
+            android:textSize="33sp"
+            android:textStyle="bold" />
+        
+    <TextView
+        android:id="@+id/tvName_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEditProfile"
+        
+        android:textStyle="bold"
+        
+        android:text="Name *" />
+
+    <EditText
+        android:id="@+id/etName_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvName_EditProfile"
+        android:layout_below="@+id/tvName_EditProfile"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Name" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvUsername_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etName_EditProfile"
+        android:layout_below="@id/etName_EditProfile"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="User Name *" />
+
+    <EditText
+        android:id="@+id/etUserName_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvUsername_EditProfile"
+        android:layout_below="@+id/tvUsername_EditProfile"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Username" />
+
+    <TextView
+        android:id="@+id/tvPassword_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUserName_EditProfile"
+        android:layout_below="@+id/etUserName_EditProfile"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Current Password *" />
+
+    <EditText
+        android:id="@+id/etPassword_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPassword_EditProfile"
+        android:layout_below="@+id/tvPassword_EditProfile"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Current Password"
+        android:inputType="textPassword" />
+    
+    
+        <TextView
+        android:id="@+id/tvNewPassword_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUserName_EditProfile"
+        android:layout_below="@+id/etPassword_EditProfile"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="New Password *" />
+
+    <EditText
+        android:id="@+id/etNewPassword_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPassword_EditProfile"
+        android:layout_below="@+id/tvNewPassword_EditProfile"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="New Password"
+        android:inputType="textPassword" />
+    
+    
+    
+    
+        <TextView
+        android:id="@+id/tvConfirmPassword_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUserName_EditProfile"
+        android:layout_below="@+id/etNewPassword_EditProfile"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Confirm New Password *" />
+
+    <EditText
+        android:id="@+id/etConfirmPassword_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPassword_EditProfile"
+        android:layout_below="@+id/tvConfirmPassword_EditProfile"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Confirm New Password"
+        android:inputType="textPassword"
+      />
+    
+    
+        <TextView
+        android:id="@+id/tvPhone_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUserName_EditProfile"
+        android:layout_below="@+id/etConfirmPassword_EditProfile"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Phone" />
+
+    <EditText
+        android:id="@+id/etPhone_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPassword_EditProfile"
+        android:layout_below="@+id/tvPhone_EditProfile"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Phone No" />
+    
+    
+        <TextView
+        android:id="@+id/tvAddress_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPhone_EditProfile"
+        android:layout_below="@+id/etPhone_EditProfile"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Address" />
+
+    <EditText
+        android:id="@+id/etAddress_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPassword_EditProfile"
+        android:layout_below="@+id/tvAddress_EditProfile"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Address" />
+    
+    
+        <TextView
+        android:id="@+id/tvEmail_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etAddress_EditProfile"
+        android:layout_below="@+id/etAddress_EditProfile"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/etEmail_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvAddress_EditProfile"
+        android:layout_below="@+id/tvEmail_EditProfile"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Email" />
+    
+    
+        <TextView
+        android:id="@+id/tvAge_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUserName_EditProfile"
+        android:layout_below="@+id/etEmail_EditProfile"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Age" />
+
+    <EditText
+        android:id="@+id/etAge_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPassword_EditProfile"
+        android:layout_below="@+id/tvAge_EditProfile"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Age" />
+    
+    
+        <TextView
+        android:id="@+id/tvSex_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUserName_EditProfile"
+        android:layout_below="@+id/etAge_EditProfile"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Sex" />
+
+    <Spinner
+        android:id="@+id/spinnerSex_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSex_EditProfile"
+        android:layout_marginTop="10dp"
+        android:entries="@array/sex_array"
+    
+        />
+    
+        <TextView
+        android:id="@+id/tvWeight_EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUserName_EditProfile"
+        android:layout_below="@+id/spinnerSex_EditProfile"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Weight" />
+
+    <EditText
+        android:id="@+id/etWeight_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPassword_EditProfile"
+        android:layout_below="@+id/tvWeight_EditProfile"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Weight" />
+
+    <Button
+        android:id="@+id/btEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/etWeight_EditProfile"
+        android:background="@android:color/holo_green_light"
+       android:layout_marginTop="25dp"
+        
+        android:text="Save Changes" />
+
+    
+</RelativeLayout>
+</ScrollView>

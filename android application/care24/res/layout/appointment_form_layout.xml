@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Appointment Form"
+        android:textSize="30dp" />
+      <Button
+        android:id="@+id/button_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Choose Appointment Date" />
+
+    <TextView
+        android:id="@+id/textview_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_date"
+        android:text="Date Not Selected"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+  
+    <TextView
+        android:id="@+id/give_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_date"
+        android:layout_marginTop="5dp"
+        
+        android:text="Diease Details:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/give_description"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageDetails"
+        android:ems="10"
+        android:imeOptions="actionSend" />
+
+    
+    <TextView
+        android:id="@+id/invoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/description"
+        android:layout_below="@+id/description"
+        android:text="Invoice No:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    <EditText
+        android:id="@+id/invoice_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/invoice"
+        android:layout_below="@+id/invoice"
+        android:ems="10" />
+ <TextView
+        android:id="@+id/bkash_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/description"
+        android:layout_below="@+id/invoice_no"
+        android:text="Bkash/Card No:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    <EditText
+        android:id="@+id/bkash_card_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bkash_card"
+        android:layout_below="@+id/bkash_card"
+        android:ems="10" />
+    
+    <Button
+        android:id="@+id/button_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+       android:layout_marginTop="15dp"
+        android:layout_below="@+id/bkash_card_no"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Send Request" />
+    
+</RelativeLayout>

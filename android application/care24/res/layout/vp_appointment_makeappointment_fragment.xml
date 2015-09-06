@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+  android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+<RelativeLayout 
+    android:id="@+id/etBkash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tvMakeAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make Appointment"
+        android:textColor="#006633"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    
+    
+    <TextView
+        android:id="@+id/tvDoctorName_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/tvMakeAppointment"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+        <TextView
+        android:id="@+id/tvSpecialist_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDoctorName_ma"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+            <TextView
+        android:id="@+id/tvEmail_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSpecialist_ma"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+        android:id="@+id/tvPhone_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmail_ma"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+                <TextView
+        android:id="@+id/tvAddress_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPhone_ma"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    
+    
+
+    <Button
+        android:id="@+id/btBkash_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAddress_ma"
+        android:layout_marginTop="15dp"
+        android:text="bKash" />
+    <EditText
+        android:id="@+id/etBkash_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btBkash_ma"
+        android:visibility="invisible"
+        android:ems="10"
+        android:hint="Transanction ID" >
+
+       
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvOr_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+ 		android:layout_below="@+id/etBkash_ma"
+ 		android:gravity="center"
+        android:text="Or"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    
+        <Button
+        android:id="@+id/btBank_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOr_ma"
+        
+        android:text="Bank" />
+    <EditText
+        android:id="@+id/etBank_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btBank_ma"
+        android:visibility="invisible"
+        android:ems="10"
+        android:hint="Transanction ID" >
+
+       
+    </EditText>
+
+    <Button
+        android:id="@+id/btMakeAppointment_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBank_ma"
+        android:background="#009933"
+        android:text="Make Appointment" />
+    
+</RelativeLayout>
+</ScrollView>
